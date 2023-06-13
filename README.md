@@ -1,4 +1,4 @@
 # go-Checksec
-使用golang实现检测PE安全属性，实现Checksec功能
+Use golang to detect PE security and realize Checksec function
 
 ![image](https://github.com/noob-Engle/go-Checksec/blob/main/INFO.png)
