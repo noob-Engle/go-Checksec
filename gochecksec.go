@@ -70,7 +70,7 @@ func checkSecurity(file string) error {
         fmt.Println("ForceIntegrity enabled:", (oh.DllCharacteristics&IMAGE_DLLCHARACTERISTICS_FORCE_INTEGRITY) != 0)
     }
 
-    // 检查子系统类型
+    
     switch peFile.FileHeader.Characteristics & pe.IMAGE_FILE_DLL {
     case 0:
         fmt.Println("Subsystem type: Native")
@@ -82,11 +82,7 @@ func checkSecurity(file string) error {
 }
 
 func main() {
-    //flag.Parse()
-    //file := flag.Arg(0)
-    //if err := checkSecurity(file); err != nil {
-       // fmt.Println("Error checking security:", err)
-    //}
+    
 
 fmt.Println("====================================================================================")
 banner := ` ██       ██ ██           ████████                   ██████  ██              ██    
